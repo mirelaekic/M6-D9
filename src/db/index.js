@@ -1,7 +1,7 @@
 const { Sequelize, DataTypes } = require("sequelize");
 const Category = require("./category");
 const Article = require("./article");
-const Review = require("./review");
+//const Review = require("./review");
 
 const sequelize = new Sequelize(
     process.env.PGDATABASE,
@@ -14,8 +14,8 @@ const sequelize = new Sequelize(
 );
 const models = {
     Category: Category(sequelize, DataTypes),
-    Article: Article(sequelize, DataTypes),
-    Reviews: Review(sequelize, DataTypes)
+    Article: Article(sequelize, DataTypes)
+   // Reviews: Review(sequelize, DataTypes)
 };
 Object.keys(models).forEach((modelName) => {
     if("associate" in models[modelName]) {

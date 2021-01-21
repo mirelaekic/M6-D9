@@ -1,6 +1,6 @@
-module.exports = (sequelize, DataTypes) => {
+/*module.exports = (sequelize, DataTypes) => {
     const Review = sequelize.define(
-      "Review",
+      "review",
       {
         id: {
           type: DataTypes.INTEGER,
@@ -25,4 +25,4 @@ module.exports = (sequelize, DataTypes) => {
       Review.hasMany(models.Article);
     };
     return Review;
-  };
+  };*/

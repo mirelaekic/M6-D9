@@ -1,4 +1,4 @@
-const express = require("express");
+/*const express = require("express");
 const Review = require("../../db").Review;
 const Article = require("../../db").Article;
 const { Op, Sequelize } = require("sequelize");
@@ -38,4 +38,4 @@ router.route("/:articleId").get(async (req, res, next) => {
       }
     });
 
-module.exports = router; 
+module.exports = router; */
