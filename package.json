@@ -4,7 +4,6 @@
   "description": "CRUDS for Medium app with Sequelize",
   "main": "index.js",
   "scripts": {
-    "test": "mocha",
     "dev":"nodemon ./src/"
   },
   "repository": {
