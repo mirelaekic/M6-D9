@@ -4,7 +4,7 @@ const Category = require("../../db").Category;
 const { Op } = require("sequelize");
 const router = express.Router();
 
-router.route("/").get(async (req, res, next) => {
+router.get("/", async (req, res, next) => {
     try {
         const data = await Article.findAll({
             include: {
